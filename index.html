@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStyle</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        .center{
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            align-content: center;
+            margin-left: 40%;
+            margin-right: 30%;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1 class="center">Money Master</h1>
+    <div class="center">
+        <h2>Income</h2>
+            <h3>income</h3>
+                <input id="monthly-income" type="text">
+            <h2>Expenses</h2>
+                <h3>Food</h3>
+                    <input  id="food" type="text">
+                <h3>Rent</h3>
+                    <input  id="rent" type="text">
+                <h3>Cloths</h3>
+                    <input  id="dress" type="text"><br>
+        <button id="calculate">Calculate</button>
+        
+        <h2>Total expense <span id="totalExpenses">0000</span></h2>
+        <h2>balance <span id="after-expenses">0000</span></h2>
+
+        <h3>save</h3>
+            <input id="save-amount" type="text"> <span>%</span><br>
+            <button id="save">save</button>
+        <h2>Saving Amount: <span id="saving">0000</span></h2>
+        <h2> Remaining Balance <span id="final-balance">0000</span></h2>
+    </div>
+</main>
+ <script src="./js/calculator.js"></script>
+</body>
+</html>
