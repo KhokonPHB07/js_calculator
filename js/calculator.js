@@ -19,7 +19,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     const rentExpense=calculateMonthlyExpenses('rent');
     const clothsExpense=calculateMonthlyExpenses('dress');
 
-    if(isNaN(monthlyIncome) || isNaN(foodExpense) || isNaN(rentExpense) || isNaN(clothsExpense)){
+    if(isNaN(monthlyIncome) || monthlyIncome<0 || isNaN(foodExpense) || foodExpense<0 || isNaN(rentExpense)|| rentExpense<0 || isNaN(clothsExpense) || clothsExpense<0){
         alert('Kindly input right amount of money');
         return;
     }
